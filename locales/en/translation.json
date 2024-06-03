@@ -1,4 +1,8 @@
 {
+  "site": "QAPSEC",
   "welcome": "Welcome to our website",
-  "description": "This is a multi-language website."
+  "description": "This is a multi-language website.",
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact"
 }
