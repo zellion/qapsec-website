@@ -18,29 +18,19 @@ const Nav: React.FC = () => {
       <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
         <ul className="text-center text-xl p-20">
           <Link to="Home">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              {t("home")}
-            </li>
+            <li className="navbar-onglet-portable">{t("home")}</li>
           </Link>
           <Link spy={true} smooth={true} to="Projects">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              {t("projects")}
-            </li>
+            <li className="navbar-onglet-portable">{t("projects")}</li>
           </Link>
           <Link spy={true} smooth={true} to="Services">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              {t("services")}
-            </li>
+            <li className="navbar-onglet-portable">{t("services")}</li>
           </Link>
           <Link spy={true} smooth={true} to="About">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              {t("about")}
-            </li>
+            <li className="navbar-onglet-portable">{t("about")}</li>
           </Link>
           <Link spy={true} smooth={true} to="Contact">
-            <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              {t("contact")}
-            </li>
+            <li className="navbar-onglet-portable">{t("contact")}</li>
           </Link>
         </ul>
       </div>
@@ -58,39 +48,33 @@ const Nav: React.FC = () => {
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
               <Link spy={true} smooth={true} to="Home">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                  {t("home")}
-                </li>
+                <li className="navbar-onglet">{t("home")}</li>
               </Link>
               <Link spy={true} smooth={true} to="Projects">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                  {t("projects")}
-                </li>
+                <li className="navbar-onglet">{t("projects")}</li>
               </Link>
               <Link spy={true} smooth={true} to="Services">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                  {t("services")}
-                </li>
+                <li className="navbar-onglet">{t("services")}</li>
               </Link>
               <Link spy={true} smooth={true} to="About">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                  {t("about")}
-                </li>
+                <li className="navbar-onglet">{t("about")}</li>
               </Link>
               <Link spy={true} smooth={true} to="Contact">
-                <li className="hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                  {t("contact")}
-                </li>
+                <li className="navbar-onglet">{t("contact")}</li>
               </Link>
               <Link spy={true} smooth={true} to="/">
                 <li>
                   <select
                     onChange={changeLanguage}
                     defaultValue={i18n.language}
-                    className="bg-slate-900 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer text-white"
+                    className="bg-transparent navbar-onglet"
                   >
-                    <option value="en">English</option>
-                    <option value="fr">Français</option>
+                    <option className="bg-slate-950 text-white" value="en">
+                      English
+                    </option>
+                    <option className="bg-slate-950 text-white" value="fr">
+                      Français
+                    </option>
                   </select>
                 </li>
               </Link>
