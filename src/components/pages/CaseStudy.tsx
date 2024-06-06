@@ -1,7 +1,7 @@
 import React from "react";
 
-const Projects: React.FC = () => {
+const CaseStudy: React.FC = () => {
   return <div>Projects</div>;
 };
 
-export default Projects;
+export default CaseStudy;

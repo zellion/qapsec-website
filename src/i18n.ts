@@ -4,6 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 
 const isDebugMode = import.meta.env.REACT_APP_DEBUG === "true";
+const loadPath = import.meta.env.BASE_URL + "locales/{{lng}}/{{ns}}.json";
 
 i18n
   .use(Backend)
@@ -15,8 +16,9 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    ns: ["navbar", "home", "about", "services", "case-study", "contact"],
     backend: {
-      loadPath: "/qapsec-website/locales/{{lng}}/{{ns}}.json",
+      loadPath: loadPath,
     },
   });
 
