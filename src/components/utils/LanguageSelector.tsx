@@ -1,26 +1,29 @@
 import React from "react";
-import FlagSelect from "react-flags-select";
 import { useTranslation } from "react-i18next";
+import { flag_fr, flag_en } from "../../assets";
 
 const LanguageSelector: React.FC = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (countryCode: string) => {
-    const language = countryCode === "FR" ? "fr" : "en";
-    i18n.changeLanguage(language);
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
   };
 
   return (
-    <FlagSelect
-      countries={["FR", "GB"]}
-      customLabels={{ FR: "Français", GB: "English" }}
-      showSelectedLabel={true}
-      showOptionLabel={true}
-      onSelect={changeLanguage}
-      selected={i18n.language === "fr" ? "FR" : "GB"}
-      className="text-black"
-      selectButtonClassName="text-neutral-300"
-    />
+    <div className="flex items-center space-x-4">
+      <img
+        src={flag_fr}
+        alt="Français"
+        className="w-8 h-8 cursor-pointer"
+        onClick={() => changeLanguage("fr")}
+      />
+      <img
+        src={flag_en}
+        alt="English"
+        className="w-8 h-8 cursor-pointer"
+        onClick={() => changeLanguage("en")}
+      />
+    </div>
   );
 };
 export default LanguageSelector;
