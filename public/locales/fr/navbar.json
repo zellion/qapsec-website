@@ -1,10 +1,22 @@
 {
   "site": "QAPSEC",
   "home": "Accueil",
+  "email": "qapsec@gmail.com",
   "services": "Services",
   "case-study": "Études de cas",
   "about": "Qui sommes-nous ?",
   "contact": "Contact",
   "subtitle": "Experts en Cybersécurité",
-  "description": "Bienvenue chez QAPSEC, votre partenaire de confiance en cybersécurité. Notre équipe d'experts est là pour protéger vos données et systèmes contre les menaces numériques, vous permettant ainsi de prospérer en toute sécurité."
+  "description": "Bienvenue chez QAPSEC, votre partenaire de confiance en cybersécurité. Notre équipe d'experts est là pour protéger vos données et systèmes contre les menaces numériques, vous permettant ainsi de prospérer en toute sécurité.",
+  "email_send_ok": "Mail envoyé avec succès !",
+  "email_send_nok": "Échec de l'envoi du mail ",
+  "form_title": "Envoyez-nous un message",
+  "form_send": "Envoyer",
+  "form_name": "Nom / Société",
+  "form_email": "Email",
+  "form_phone": "Téléphone",
+  "form_subject": "Sujet",
+  "form_message": "Message",
+  "contact_title": "Restons en contact",
+  "contact_speech": "Vous cherchez un expert en cybersécurité pour des services techniques, du développement, un audit, ou pour toute autre question ? N'hésitez pas à nous contacter, nous serons ravis de vous répondre et de vous aider."
 }
