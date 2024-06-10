@@ -69,6 +69,8 @@ export default {
         DEFAULT: "0.0625rem",
       },
       backgroundImage: {
+        "custom-gradient":
+          "radial-gradient(circle, rgba(2,0,36,1) 98%, rgba(2,10,48,1) 98%, rgba(2,2,28,1) 100%);",
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
         "conic-gradient":
           "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
@@ -122,6 +124,16 @@ export default {
         },
         ".button": {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
+        },
+        ".input": {
+          "@apply w-full h-[52px] rounded-lg pl-6 uppercase": {},
+        },
+        ".input,.textarea": {
+          "@apply bg-transparent outline-none focus:ring-1 border border-white/40 placeholder:text-white/70 placeholder:font-light":
+            {},
+        },
+        ".textarea": {
+          "@apply w-full h-[300px] p-6 uppercase rounded-lg resize-none": {},
         },
       });
       addUtilities({

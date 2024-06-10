@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="flex items-center px-5 py-2 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="flex w-[12rem] mr-6 xl:mr-8" href="/">
+        <a className="flex w-[10rem] mr-6 xl:mr-8" href="/">
           <img src={logo} alt="Logo" width={60} height={60} />
           <span
             className={`px-3 relative z-2 flex flex-col text-xl items-center justify-center lg:flex-row lg:text-4xl font-code lg:text-n-1/80`}
