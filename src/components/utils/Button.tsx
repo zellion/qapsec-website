@@ -15,12 +15,12 @@ const Button: React.FC<ButtonProps> = ({
   href,
   onClick,
   children,
-  px = "px-7",
+  px,
   white = false,
 }) => {
-  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${px} ${
-    white ? "text-n-8" : "text-n-1"
-  } ${className || ""}`;
+  const classes = `button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1 ${
+    px || "px-7"
+  } ${white ? "text-n-8" : "text-n-1"} ${className || ""}`;
 
   const spanClasses = "relative z-10";
 

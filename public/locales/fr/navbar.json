@@ -1,10 +1,10 @@
 {
   "site": "QAPSEC",
-  "subtitle": "Experts en Cybersécurité",
-  "presentation": "Bienvenue chez QAPSEC, votre partenaire de confiance en cybersécurité. Notre équipe d'experts est là pour protéger vos données et systèmes contre les menaces numériques, vous permettant ainsi de prospérer en toute sécurité.",
   "home": "Accueil",
   "services": "Services",
   "case-study": "Études de cas",
   "about": "Qui sommes-nous ?",
-  "contact": "Contact"
+  "contact": "Contact",
+  "subtitle": "Experts en Cybersécurité",
+  "description": "Bienvenue chez QAPSEC, votre partenaire de confiance en cybersécurité. Notre équipe d'experts est là pour protéger vos données et systèmes contre les menaces numériques, vous permettant ainsi de prospérer en toute sécurité."
 }

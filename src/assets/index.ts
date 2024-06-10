@@ -1,6 +1,7 @@
-import home from "./home.png";
+import home from "./home/robot.jpg";
 import logo from "./logo.png";
 import flag_fr from "./svg/flags/fr.svg";
 import flag_en from "./svg/flags/en.svg";
+import curve from "./home/curve.png";
 
-export { home, logo, flag_fr, flag_en };
+export { home, logo, flag_fr, flag_en, curve };
